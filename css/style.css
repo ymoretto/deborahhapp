@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=DM+Sans&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    z-index:2;
+    position:absolute;
+    display:block;
+    width: 847.18px;
+    height: 94px;
+    padding-left:121px;
+
+}
+
+header nav {
+    display:inline-block;
+    padding:15px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0px;
+    margin: 0 auto;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-weight: normal;
+    font-size:12px;
+    padding-left:20px;
+}
+
+header nav ul li a.active {
+    font-weight: 700;
+}
+
+header h1 {
+    padding-left:15px;
+    float: left;
+}
+
+section.cover {
+    z-index:5;
+    position:relative;
+    background-image: url('../images/planta.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width:728px;
+    height: 100vh;
+    float:right;
+    
+}
+
+#rectangle {
+    width: 121px;
+    height: 1080px;
+    background: #2a1706;
+}
+
+#connect {
+    z-index: 3;
+    width: 91px;
+    height: 433px;
+}
+
+#socialicon {
+    z-index: 1;
+    width: 20px;
+    height: 90.9px;
+    margin: 0 auto;
+    position: absolute;
+    left:55px;
+    bottom: 0;
+    align-content: center;
+}
+
+.icon {
+    width: 12px;
+    padding: 5px 0;
+}
