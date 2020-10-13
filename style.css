@@ -1,57 +1,83 @@
-body,h1,h2,h4,h5,h6 {font-family: "Lato", sans-serif;}
-body, html {
-  height: 100%;
-  color: #fff;
-  line-height: 1.8;
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
 }
 
-h3, p, .dark-color {
-color: #777;
+/* *Custom Proprierties */
+:root {
+    --ff-text:'Raleway', sans-serif;
+    --ff-title: 'Shanti', sans-serif;
+    --ff-header: 'Roboto', sans-serif;
+
+    --clr-black: #000;
+    --clr-white: #e5e5e5;
+    --clr-gray: #c4c4c4;
+    --clr-dark: #252525;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --fw-normal: 400;
 }
 
-.profile-image{
-  max-height: 340px;
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
 }
 
-.w3-padding-64 {
-  padding-top: 25px!important;
-  padding-bottom: 25px!important;
+/* *Typography */
+
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
 }
 
+h1 { font-size: var(--fs-h1); }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
 
-/* Create a Parallax Effect */
-.bgimg-1, .bgimg-2, .bgimg-3 {
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.section__title {
+    font-family: var(--ff-title);
+    text-transform: uppercase;
+    font-weight: var(--fw-normal);
 }
 
-/* First image (Logo. Full height) */
-.bgimg-1 {
-  background-image: url('images/cabecalho_bg.jpg');
-  min-height: 100%;
+.section__subtitle {
+    font-family: var(--ff-text);
+    font-weight: var(--fw-normal);
 }
 
-/* Second image (Portfolio) */
-.bgimg-2 {
-  background-image: url('images/portfolio_bg.jpg');
-  min-height: 400px;
+p {
+    font-family: var(--ff-text);
+    font-weight: var(--fw-normal);
+    padding: 8px 0;
 }
 
-/* Third image (Contact) */
-.bgimg-3 {
-  background-image: url('images/contato_bg.jpg');
-  min-height: 400px;
+/* *General Styles */
+
+html {
+    scroll-behavior: smooth;
 }
 
-.w3-wide {letter-spacing: 5px;}
-.w3-hover-opacity {cursor: pointer;}
+.section__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1600px) {
-  .bgimg-1, .bgimg-2, .bgimg-3 {
-    background-attachment: scroll;
-    min-height: 400px;
-  }
+.section__subtitle {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
 }

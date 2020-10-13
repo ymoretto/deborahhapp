@@ -1,173 +1,127 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deborah Happ's Portfolio</title>
 
-<head></head>
-<title>Deborah Happ's Portfolio</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+    
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto&family=Shanti&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="style.css">
 
-<script src="https://kit.fontawesome.com/baf3ebeba9.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- Navbar (sit on top) -->
-<div class="w3-top">
-  <div class="w3-bar" id="myNavbar">
-    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
-      <i class="fa fa-bars"></i>
-    </a>
-    <a href="#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
-      <i class="fa fa-search"></i>
-    </a> -->
-  </div>
+    <header>
 
-  <!-- Navbar on small screens -->
-  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
-    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
-    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
-    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACT</a>
-    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
-  </div>
-</div>
+    </header>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
-  <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity"><span class="w3-hide-small">DEBORAH</span> HAPP</span>
-  </div>
-</div>
+    <!-- *About -->
+    <section class="about" id="about">
+        <h1 class="section__title section__title--about">What about me</h1>
+        <p class="section__subtitle section__subtitle--about">I write for the screen and for the page. And sometimes, other things.</p>
 
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT ME</h3>
-  <p class="w3-center"><em>I write for the screen and for the page</em></p>
-  <p class="w3-center"><em>And sometimes, other things. </em></p>
-    <div class="w3-row">
-    <div class="w3-col m6 w3-center w3-padding-large">
-      <!-- <p><b><i class="fa fa-user w3-margin-right"></i>Deborah Happ</b></p><br> -->
-      <img src="images/deborah.jpeg" class="w3-round w3-image w3-opacity w3-hover-opacity-off profile-image" alt="Photo of Me" -width="500px" height="333">
-    </div>
+        <div class="about__body">
+            <p class="about__paragraph">I am a UX and Screen Writer. I'm currently based in São Paulo, Brazil, but have lived so many places I can't really count.</p>
+            <p class="about__paragraph">I worked in two projects for Google, as a UX Writer for Google Primer and as a copywriter for marketing website Think with Google. I also wrote screenplays for Buddhist monk Monja Coen, brazilian TV celebrity Didi Wagner and my own YouTube series Dilemas de Gente Branca.</p>
+            <p class="about__paragraph">I majored in Media Studies at Unicamp and have a Masters Degree in Aesthetics and Art History at USP, where I studied photographer Francisco Aszmann's trajectory, supervised by Helouise Costa, PhD.</p>
+        </div>
 
-    <!-- Hide this text on small devices -->
-    <div class="w3-col m6 w3-hide-small w3-padding-large">
-      <p>I am a UX and Screen Writer. I'm currently based in São Paulo, Brazil, but have lived so many places I can't really count.</p>
-      <p>I worked in two projects for Google, as a UX Writer for Google Primer and as a copywriter for marketing website Think with Google. I also wrote screenplays for Buddhist monk Monja Coen, brazilian TV celebrity Didi Wagner and my own YouTube series Dilemas de Gente Branca.</p>     
-      <p>I majored in Media Studies at Unicamp and have a Masters Degree in Aesthetics and Art History at USP, where I studied photographer Francisco Aszmann's trajectory, supervised by Helouise Costa, PhD.</p>
-    </div>
-  </div>
-  <p class="w3-large w3-center w3-padding-16">I'm really good at:</p>
-  <p class="w3-wide"><i class="fas fa-chess"></i>Content Strategy</p>
-  <p class="w3-wide"><i class="fas fa-film"></i>Screen Writing</p>
-  <p class="w3-wide"><i class="fas fa-dragon"></i>Storytelling</p>
-  <p class="w3-wide"><i class="fas fa-clipboard"></i>UX Writing</p>
-</div>
+        <img src="images/deborah.jpeg" alt="Deborah Happ" class="about__image">
+    </section>
 
-<!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
-  </div>
-</div>
+    <!--*Skills-->
+    <section class="skills" id="skills">
+        <h1 class="section__title section__title--skills">My Skills</h1>
+        <p class="section__subtitle section__subtitle--skills">This is some of the thing I’m really good at.</p>
 
-<!-- Container (Portfolio Section) -->
-<div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">MY WORK</h3>
-  <p class="w3-center"><em>Check out some awesome projects I've been involved in.</em></p><br>
+        <div class="skills__body">
 
-  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-  <div class="w3-row-padding w3-center">
-    <div class="w3-col m3">
-      <img src="images/portfolinho/thinkwithgoogle.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="At Think With Google, I translated and wrote original articles about consumer behaviour and technology. The article below is about the evolution of YouTubers.">
-    </div>
+            <div class="skills__box">
+                <i class="fas fa-adjust"></i>
+                <h2 class="skills__box--title">Title of Skill</h2>
+                <p class="skills__box--paragraph">There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+            </div> <!-- /skills__box-->
 
-    <div class="w3-col m3">
-      <img src="images/portfolinho/didiwagner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I wrote for ex-VJ Didi Wagner. For example, the episode with astrologer Madama Bruna, singer Larissa Luz and drag queen Lia Clark. I also wrote the episode Nostalgia dos Anos 2000, one of the top 3 most viewed videos, that gathered over 30 thousand views.">
-    </div>
+            <div class="skills__box">
+                <i class="fas fa-adjust"></i>
+                <h2 class="skills__box--title">Title of Skill</h2>
+                <p class="skills__box--paragraph">There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+            </div> <!-- /skills__box-->
 
-    <div class="w3-col m3">
-      <img src="images/portfolinho/dilemas.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The one-scene series. João Rabelo, Thatiana Guimarães, Martinho Hoffman, and I created the web series that was filmed only once and rewritten and redubbed forever. We have over 50 episodes.">
-    </div>
+            <div class="skills__box">
+                <i class="fas fa-adjust"></i>
+                <h2 class="skills__box--title">Title of Skill</h2>
+                <p class="skills__box--paragraph">There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+            </div> <!-- /skills__box-->
 
-    <div class="w3-col m3">
-      <img src="images/portfolinho/monjacoen.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="'Monja Responde' is one of the most popular bits in Buddhist monk Monja Coen's YouTube channel, where she answers questions from her public. I came up with the strategy, selected the questions and wrote the script for the fifth season.">
-    </div>
-  </div>
+            <div class="skills__box">
+                <i class="fas fa-adjust"></i>
+                <h2 class="skills__box--title">Title of Skill</h2>
+                <p class="skills__box--paragraph">There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+            </div> <!-- /skills__box-->
 
-  <div class="w3-row-padding w3-center w3-section">
-    <div class="w3-col m3">
-      <img src="images/portfolinho/revista-fantastica-horror-quadrado.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I am a co-founder of Fantástika 451, that organises on and offline events, as well as a literary magazine all about fantastic literature. I edited our horror issue.">
-    </div>
+        </div> <!--/skills__body-->
+    </section>
 
-    <div class="w3-col m3">
-      <img src="images/portfolinho/cursinho-marielle.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A free preparatory course made only by women. I am responsible for the content strategy and their social media.">
-    </div>
+    <!--*Work-->
+    <section class="work" id="work">
+        <h1 class="section__title section__title--work">My Work</h1>
+        <p class="section__subtitle section__subtitle--work">Check out some awesome projects I've been involved in.</p>
 
-    <div class="w3-col m3">
-      <img src="images/portfolinho/google-primer.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Google Primer is a learning app for small businesses. I created the Brazilian tone of voice, researched and wrote the lessons of 'Manual do Empreendedor'. Later, my lessons were translated to several other languages.">
-    </div>
+        <div class="work__box">
+            <h2 class="work__box--title">Title Here</h2>
 
-    <div class="w3-col m3">
-      <img src="images/portfolinho/ficcao.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="I also write a lot of fiction. My stories can be seen in Faísca Mafagafo, Pio Mafagafo, Mitografias, at Revista Gueto and Revista Raimundo.">
-    </div>
+            <hr class="work__box--line">
 
-    <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
-  </div>
-</div>
+            <img src="images/portfolinho/dilemas.jpg" alt="" class="work__box--image">
 
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
-  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-    <img id="img01" class="w3-image">
-    <p id="caption" class="w3-opacity w3-large"></p>
-  </div>
-</div>
+            <p class="work__box--paragraph">I am a UX and Screen Writer. I'm currently based in São Paulo, Brazil, but have lived so many places I can't really count.</p>
 
-<!-- Third Parallax Image with Portfolio Text -->
-<div class="bgimg-3 w3-display-container w3-opacity-min">
-  <div class="w3-display-middle">
-     <span class="w3-xxlarge w3-text-white w3-wide">CONTACT</span>
-  </div>
-</div>
+            <button class="work__box--button">Read More</button>
 
-<!-- Container (Contact Section) -->
-<div class="w3-content w3-container w3-padding-64" id="contact">
-  <h3 class="w3-center">WANT TO WORK WITH ME?</h3>
-  <p class="w3-center"><em>I'm all ears!</em></p>
+        </div> <!--/work__box-->
+    </section>
 
-  <div class="w3-row w3-padding-32 w3-section">
-    <div class="w3-col m4 w3-container">
-      <img src="images/saopaulo-min.jpg" class="w3-image w3-round" style="width:100%">
-    </div>
-    <div class="w3-col m8 w3-panel">
-      <div class="w3-large w3-margin-bottom">
-        <i class="fas fa-map-marker w3-hover-text-black w3-xlarge w3-margin-right" style="color:#777; margin-left:6px"></i> <em class="dark-color">São Paulo, SP</em><br>
-        <i class="fas fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:#777"></i></i><em class="dark-color">deborah.happ@gmail.com</em><br>
-        <a href="https://twitter.com/deeeehapp"><i class="fab fa-twitter-square fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:#777"></i></a>
-        <a href="https://www.linkedin.com/in/deborah-happ-4449139b/"><i class="fab fa-linkedin fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:#777"></i></a>
-        <a href="https://www.instagram.com/deeeehapp/"><i class="fab fa-instagram fa-fw w3-hover-text-black w3-xlarge w3-margin-right" style="color:#777"></i></a>
-      </div>
-      <p>Swing by for a cup of <i class="fa fa-coffee"></i></p>
+    <section class="events" id="events">
+        <h1 class="section__title section__title--events">Events</h1>
+        <p class="section__subtitle section__subtitle--events">Here are some of the events I’ve organized, helped organized or participated in anyway</p>
 
-    </div>
-  </div>
-</div>
+        <div class="events__body">
 
-<!-- Footer -->
-<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
-  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a> and adapted by <a href="https://ymoretto.github.io/">Yolanda Moretto</a></p>
-</footer>
- 
-<script src="script.js"></script>
+            <div class="events__box">
+                <i class="fas fa-adjust"></i>
+                <h2 class="events__box--title">Title of Skill</h2>
+                <p class="events__box--paragraph">There are many variations of passages of Lorem Ipsum available, but the joy have suffered alteration in some format, by injected humour.</p>
+            </div> <!-- /events__box-->
+
+        </div> <!-- /events__body-->
+    </section>
+
+    <!-- *Footer -->
+    <footer class="footer">
+        <a href="mailto:ymoretto@gmail.com" class="footer__link">ymoretto@gmail.com</a>
+        <ul class="social-list">
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="https://www.linkedin.com/in/yolanda-moretto-scudeller/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="https://twitter.com/ymoretto">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </li>
+            <li class="social-list__item">
+                <a class="social-list__link" target="_blank" href="https://github.com/ymoretto">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
+        </ul>
+    </footer>
+
 </body>
 </html>
