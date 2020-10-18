@@ -166,3 +166,79 @@ section {
     vertical-align: middle;
     padding: 1px 1px;
 }
+
+/* !Work Section */
+
+.work__box {
+    background-color: var(--clr-dark);
+    padding: 0;
+    margin-right: 3vw;
+    margin-left: 3vw;
+    padding-bottom: 3vh;
+}
+
+.work__box--titlebox {
+    display: flex;
+    justify-content: space-around;
+    margin: 1em 15em;
+    padding: 1em 0 0 0;
+    
+}
+
+.work__box--title {
+    display: inline;
+    font-family: var(--ff-title);
+    color: var(--clr-gray);
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.work__box--portfolio {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+}
+
+.work__box--portfolio-image {
+    max-width: 35em;
+    margin: 20px 0;
+}
+
+.work__box--portfolio-description {
+    max-width: 30em;
+}
+
+.active-underline {
+    text-decoration: underline;
+}
+
+.vl {
+    border-left: 2px solid var(--clr-gray);
+  }
+
+.work__box--line {
+    margin: 2vh 0;
+}
+
+  .work__box--paragraph {
+      color: var(--clr-gray);
+
+  }
+
+  .work__box--button {
+      background-color: var(--clr-gray);
+      color: var(--clr-black);
+      border: none;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin-top: 1.2em;
+  }
+
+  /* !Events Section */
+
+  .events__body {
+      
+  }
