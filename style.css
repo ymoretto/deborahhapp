@@ -92,6 +92,100 @@ section {
     
 }
 
+/* !Navbar */
+
+nav{
+    background: var(--clr-black);
+    height: 80px;
+    width: 100%;
+}
+
+label.logo {
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--clr-white);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover{
+    background: var(--clr-gray);
+    transition: .5s;
+}
+
+.checkbtn {
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+}
+
+#check {
+    display: none;
+}
+
+@media (max-width: 952px) {
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px) {
+    .checkbtn{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: var(--clr-gray);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size:20px;
+    }
+    a:hover{
+        background: none;
+        color: var(--clr-black);
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
 /* !About Section */
 
 .about__body {
@@ -234,6 +328,11 @@ section {
     color: var(--clr-gray);
     font-size: 2rem;
     text-transform: uppercase;
+    cursor: pointer;
+}
+
+.work__box--title:hover {
+    color: var(--clr-white);
 }
 
 .work__box--portfolio {
@@ -249,10 +348,6 @@ section {
 
 .work__box--portfolio-description {
     max-width: 30em;
-}
-
-.active-underline {
-    text-decoration: underline;
 }
 
 .vl {
@@ -278,6 +373,11 @@ section {
       display: inline-block;
       font-size: 16px;
       margin-top: 1.2em;
+      cursor: pointer;
+  }
+
+  .work__box--button:hover{
+      background-color: var(--clr-white);
   }
 
   @media (max-width: 1000px) {
@@ -383,4 +483,8 @@ section {
         opacity: 1;
         transform: matrix3d(0, 0, 0);
     }
+  }
+
+ h2.active {
+      color: white;
   }

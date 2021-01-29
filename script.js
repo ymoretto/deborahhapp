@@ -11,9 +11,17 @@ if(workMenu.length && workContent.length) {
         workContent[index].classList.add('active');
     };
 
+    const activateMenu = (index) => {
+        workMenu.forEach((menu) => {
+            menu.classList.remove('active');
+        })
+        workMenu[index].classList.add('active');
+    };
+
     workMenu.forEach((itemMenu, index) => {
         itemMenu.addEventListener('click', () => {
             activateWork(index);
+            activateMenu(index);
         });
     });
 }
