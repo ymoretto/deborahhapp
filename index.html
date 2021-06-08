@@ -16,17 +16,13 @@
 <body>
 
     <header>
-        <nav>
-            <input type="checkbox" id="check">
-            <label for="check" class="checkbtn">
-                <i class="fas fa-bars fa-1x" style="color: white;"></i>
-            </label>
-            <label class="logo"> Deborah Happ </label>
-            <ul>
-                <li><a href="#">Myself</a></li>
-                <li><a href="#">My Skills</a></li>
-                <li><a href="#">My Work</a></li>
-                <li><a href="#">Where I Am</a></li>
+        <nav id="topnav" class="topnav">
+            <label class="logo">Deborah Happ</label>
+            <ul id="nav-ul" class="nav-ul">
+                <li><a href="#about" class="link">Myself</a></li>
+                <li><a href="#skills" class="link">My Skills</a></li>
+                <li><a href="#work" class="link">My Work</a></li>
+                <li><a href="#events" class="link">Where I Am</a></li>
             </ul>
         </nav>
     </header>
@@ -88,7 +84,9 @@
     <!--*Work-->
     <section class="work" id="work">
         <h1 class="section__title section__title--work">My Work</h1>
-        <p class="section__subtitle section__subtitle--work">Check out some awesome projects I've been involved in.</p>
+        <p class="section__subtitle section__subtitle--work">
+            Check out some awesome projects I've been involved in.
+        </p>
 
         <div class="work__box">
             <div class="work__box--titlebox js-titlebox">
@@ -167,23 +165,17 @@
         <a href="mailto:deborahhapp@gmail.com" class="footer__link">deborah.happ@gmail.com</a>
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" target="_blank" href="https://www.linkedin.com/in/yolanda-moretto-scudeller/">
+                <a class="social-list__link" target="_blank" href="https://www.linkedin.com/in/deborah-happ-4449139b/">
                     <i class="fab fa-linkedin fa-2x color-i"></i>
                 </a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" target="_blank" href="https://twitter.com/ymoretto">
+                <a class="social-list__link" target="_blank" href="https://twitter.com/deeeehapp">
                     <i class="fab fa-twitter fa-2x color-i"></i>
-                </a>
-            </li>
-            <li class="social-list__item">
-                <a class="social-list__link" target="_blank" href="https://github.com/ymoretto">
-                    <i class="fab fa-github fa-2x color-i"></i>
                 </a>
             </li>
         </ul>
     </footer>
-
 
         <script src="script.js"></script>
 </body>

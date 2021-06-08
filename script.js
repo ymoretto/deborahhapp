@@ -1,3 +1,4 @@
+//PORTFOLIO
 const workMenu = document.querySelectorAll('.js-titlebox h2');
 const workContent = document.querySelectorAll('.js-work__menu .js-item__portfolio');
 
