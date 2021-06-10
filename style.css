@@ -444,6 +444,7 @@ nav ul li a:hover{
 
     .screenwriting__image {
         max-width: 400px;
+        max-height:300px;
     }
 
     .screenwriting__button {
